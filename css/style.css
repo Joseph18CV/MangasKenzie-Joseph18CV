@@ -193,6 +193,10 @@ li img {
     margin-top: 20px;
 }
 
+.pesquisar-produto {
+    display: flex;
+    justify-content: space-between;
+}
 .carrinho input {
     margin-right: 2px;
     width: 234px;
@@ -201,7 +205,8 @@ li img {
     border: none;
     background-color: rgba(128, 128, 128, 0.209);
     text-align: left; 
-    padding: 10px;  
+    padding: 10px; 
+    outline: none; 
 }
 
 .carrinho input::placeholder {

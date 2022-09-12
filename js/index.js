@@ -298,6 +298,45 @@ function searchProduct (list) {
             })
         }
     })
+    for (let j = 0; j < list[i].tag.length; j++){
+        buttonTodos[0].addEventListener("click", function(event){
+        ul.appendChild(li)
+        
+    })
+
+    if (list[i].tag != "Shounen"){
+        buttonShounen[0].addEventListener("click", function(event){
+        li.remove()
+    })
+    }
+    if (list[i].tag == "Shounen"){
+        buttonShounen[0].addEventListener("click", function(event){
+        ul.appendChild(li)
+    })
+    }
+
+    if (list[i].tag != "SliceOfLife"){
+        buttonSliceOfLife[0].addEventListener("click", function(event){
+        li.remove()
+    })
+    }
+    if (list[i].tag == "SliceOfLife"){
+        buttonSliceOfLife[0].addEventListener("click", function(event){
+        ul.appendChild(li)
+    })
+    }
+
+    if (list[i].tag != "Isekai"){
+        buttonIsekai[0].addEventListener("click", function(event){
+        li.remove()
+    })
+    }
+    if (list[i].tag == "Isekai"){
+        buttonIsekai[0].addEventListener("click", function(event){
+        ul.appendChild(li)
+    })
+    }
+}
             }
         }
     })

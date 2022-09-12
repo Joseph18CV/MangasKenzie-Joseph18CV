@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./js/database.js"></script>
+    <script defer src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mangás Kenzie</title>
+</head>
+<body>
+    <header class="comeco">
+        <h1>Mangás Kenzie</h1>
+        <nav class="menu-nav">
+            <button class="botao-todos"><strong>Todos</strong></button>
+            <button class="botao-shounen">Shounen</button>
+            <button class="botao-sliceoflife">Slice-of-Life</button>
+            <button class="botao-isekai">Isekai</button>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="products">
+            <ul class="products-list">
+                <!-- CRIAR CARDS - DOM -->
+            </ul>
+        </section>
+        <aside class="carrinho">
+            <form class="pesquisar-produto">
+                <input type="text" placeholder="Digite sua pesquisa" id="barrapesquisa" autocomplete="off"></input>
+                <button id="pesquisarItem">Pesquisar</button>
+            </form>
+            <div class="carrinho-compras">
+                <p>Carrinho de Compras</p>
+            </div>
+            <div class="carrinho-vazio">
+                <h2>Carrinho Vazio</h2>
+                <p>Adicionar Itens</p>
+            </div>
+            <ul class="products-car-list">
+                <!-- CRIAR CARDS DO CARRINHO - DOM -->
+            </ul>
+            <div class="foother">
+                <p>Quantidade:<small id="countElement">0</small></p>
+                <span>Total:<small id="countValue"></span>
+          </div>
+        </aside>
+    </main>
+</body>
+</html>
